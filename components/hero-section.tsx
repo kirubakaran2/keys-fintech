@@ -3,7 +3,7 @@ import { useState, useEffect, useCallback, useMemo } from "react";
 import Link from "next/link";
 // Sample background image URL for demo
 const backgroundImageUrl =
-  "https://img.freepik.com/free-vector/modern-blue-vibrant-backdrop-with-round-curve-lines-vector_1017-53562.jpg?t=st=1758037183~exp=1758040783~hmac=e4c003a9c38675fabaf851f009a4865f3fd72ac0aeb5f7f98b22cbd8a61eea8c&w=2000";
+  "https://res.cloudinary.com/dy2gwtbjb/image/upload/v1758277235/blue_fkzizv.jpg";
 
 interface Service {
   name: string;
@@ -162,7 +162,7 @@ export default function ProfessionalHero(): JSX.Element {
   // Optimized background styles
   const backgroundStyles = useMemo(() => ({
           backgroundImage:
-            "url(https://img.freepik.com/free-vector/modern-blue-vibrant-backdrop-with-round-curve-lines-vector_1017-53562.jpg?t=st=1758037183~exp=1758040783~hmac=e4c003a9c38675fabaf851f009a4865f3fd72ac0aeb5f7f98b22cbd8a61eea8c&w=2000)",
+            "url(https://res.cloudinary.com/dy2gwtbjb/image/upload/v1758277235/blue_fkzizv.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
