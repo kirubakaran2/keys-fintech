@@ -100,15 +100,15 @@ export default function EnhancedNavbar() {
                     onMouseEnter={() => setHoveredItem(link.name)}
                     onMouseLeave={() => setHoveredItem(null)}
                   >
-                    <button className="text-gray-700 hover:text-emerald-600 px-4 py-2 rounded-lg text-sm font-medium flex items-center transition-all duration-300 hover:bg-emerald-50 relative overflow-hidden group">
+                    <button className="text-gray-700 hover:text-skyblue-600 px-4 py-2 rounded-lg text-sm font-medium flex items-center transition-all duration-300 hover:bg-blue-50 relative overflow-hidden group">
                       <span className="relative z-10">{link.name}</span>
                       <ChevronDown
                         size={16}
                         className={`ml-1 transition-all duration-300 ${
-                          hoveredItem === link.name ? 'rotate-180 text-emerald-600' : ''
+                          hoveredItem === link.name ? 'rotate-180 text-blue-600' : ''
                         }`}
                       />
-                      <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-emerald-600/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-blue-600/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                     </button>
                     
                     {/* Desktop Dropdown */}
@@ -121,7 +121,7 @@ export default function EnhancedNavbar() {
                         <a
                           key={subitem.name}
                           href={subitem.href}
-                          className="block text-sm text-gray-700 rounded-lg px-3 py-3 hover:bg-emerald-50 hover:text-emerald-600 transition-all duration-200 transform hover:translate-x-1"
+                          className="block text-sm text-gray-700 rounded-lg px-3 py-3 hover:bg-blue-50 hover:text-blue-600 transition-all duration-200 transform hover:translate-x-1"
                           style={{
                             animationDelay: hoveredItem === link.name ? `${subIndex * 50}ms` : '0ms'
                           }}
@@ -135,10 +135,10 @@ export default function EnhancedNavbar() {
                   <a
                     key={link.name}
                     href={link.href}
-                    className="text-gray-700 hover:text-emerald-600 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-emerald-50 relative overflow-hidden group"
+                    className="text-gray-700 hover:text-blue-600 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-blue-50 relative overflow-hidden group"
                   >
                     <span className="relative z-10">{link.name}</span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-emerald-600/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-blue-600/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                   </a>
                 )
               )}
@@ -147,7 +147,7 @@ export default function EnhancedNavbar() {
             {/* Desktop Button */}
             <div className="hidden md:flex">
               <a href="/contact">
-                <button className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/30 hover:scale-105 transform">
+                <button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30 hover:scale-105 transform">
                   Get Started
                 </button>
               </a>
@@ -157,7 +157,7 @@ export default function EnhancedNavbar() {
             <div className="md:hidden">
               <button
                 type="button"
-                className="text-gray-700 hover:text-emerald-600 p-2 rounded-lg transition-all duration-300 hover:bg-emerald-50 relative"
+                className="text-gray-700 hover:text-blue-600 p-2 rounded-lg transition-all duration-300 hover:bg-blue-50 relative"
                 onClick={() => setIsOpen(!isOpen)}
               >
                 <div className="w-6 h-6 relative">
@@ -201,11 +201,11 @@ export default function EnhancedNavbar() {
                   <div className="py-2">
                     <button
                       onClick={() => toggleSubmenu(link.name)}
-                      className="flex justify-between items-center w-full px-4 py-4 text-gray-800 hover:bg-gradient-to-r hover:from-emerald-50 hover:to-emerald-100/50 rounded-xl text-left transition-all duration-300 group"
+                      className="flex justify-between items-center w-full px-4 py-4 text-gray-800 hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100/50 rounded-xl text-left transition-all duration-300 group"
                     >
-                      <span className="font-medium text-lg group-hover:text-emerald-600 transition-colors duration-300">{link.name}</span>
+                      <span className="font-medium text-lg group-hover:text-blue-600 transition-colors duration-300">{link.name}</span>
                       <div className={`transform transition-all duration-300 ${
-                        openSubmenu === link.name ? 'rotate-180 text-emerald-600' : 'text-gray-500'
+                        openSubmenu === link.name ? 'rotate-180 text-blue-600' : 'text-gray-500'
                       }`}>
                         <ChevronDown className="h-5 w-5" />
                       </div>
@@ -224,7 +224,7 @@ export default function EnhancedNavbar() {
                           <a
                             key={subitem.name}
                             href={subitem.href}
-                            className={`block px-4 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-emerald-50 hover:to-emerald-100/50 hover:text-emerald-600 rounded-lg text-sm transition-all duration-300 transform hover:translate-x-2 hover:scale-105 ${
+                            className={`block px-4 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100/50 hover:text-blue-600 rounded-lg text-sm transition-all duration-300 transform hover:translate-x-2 hover:scale-105 ${
                               openSubmenu === link.name 
                                 ? 'translate-x-0 opacity-100' 
                                 : 'translate-x-4 opacity-0'
@@ -236,7 +236,7 @@ export default function EnhancedNavbar() {
                           >
                             <span className="relative">
                               {subitem.name}
-                              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></div>
+                              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></div>
                             </span>
                           </a>
                         ))}
@@ -246,12 +246,12 @@ export default function EnhancedNavbar() {
                 ) : (
                   <a
                     href={link.href}
-                    className="block px-4 py-4 text-gray-800 hover:bg-gradient-to-r hover:from-emerald-50 hover:to-emerald-100/50 hover:text-emerald-600 rounded-xl font-medium text-lg transition-all duration-300 transform hover:translate-x-2 hover:scale-105 relative group"
+                    className="block px-4 py-4 text-gray-800 hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100/50 hover:text-blue-600 rounded-xl font-medium text-lg transition-all duration-300 transform hover:translate-x-2 hover:scale-105 relative group"
                     onClick={handleLinkClick}
                   >
                     <span className="relative">
                       {link.name}
-                      <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></div>
+                      <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></div>
                     </span>
                   </a>
                 )}
@@ -268,7 +268,7 @@ export default function EnhancedNavbar() {
               transitionDelay: isOpen ? `${links.length * 100}ms` : '0ms'
             }}>
               <a href="/contact" onClick={handleLinkClick}>
-                <button className="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white px-6 py-4 rounded-2xl font-medium text-lg transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/30 transform hover:scale-105 hover:-translate-y-1">
+                <button className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-4 rounded-2xl font-medium text-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30 transform hover:scale-105 hover:-translate-y-1">
                   <span className="flex items-center justify-center">
                     Get Started
                     <div className="ml-2 w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">
